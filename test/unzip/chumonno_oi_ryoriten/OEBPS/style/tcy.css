@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, table, caption, tbody, tfoot, thead, tr, th, td, article, header, hgroup, section, aside, footer, figure, nav, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 1em;
+	/*line-height: 1.8;*/
+}
+body {
+	writing-mode: horizontal-tb;
+	-webkit-writing-mode: horizontal-tb;
+	-epub-writing-mode: horizontal-tb;
+}
+div {
+	margin: 0;
+	font-size: 1em;
+}
+p {
+	margin: 0;
+	font-size: 1em;
+}
+ol {
+  	list-style-type: none;
+}
+ul {
+}
+li {
+}
+img {
+	border: 0;
+}
+
+/* 装飾 */
+strong {
+	font-weight: bold;
+}
+.big01 {
+	font-size: 120%;
+	font-weight: bold;
+}
+.big02 {
+	font-size: 150%;
+	font-weight: bold;
+}
+.small01 {
+	font-size: 80%;
+}
+.small02 {
+	font-size: 70%;
+}
+rt {
+	font-size: 0.5em;
+
+}
+.h1-01 {
+	display: none;
+}
+.italic01 {
+	font-style: italic;
+}
+.bold01 {
+	font-weight: bold;
+}
+.gaiji01 {
+	width: 1em;
+}
+.underline01 {
+	text-decoration: underline;
+}
+.overline01 {
+	text-decoration: overline;
+}
+.linethrough01 {
+	text-decoration: line-through;
+}
+.migi01 {
+	text-align: right;
+}
+.yct {
+	font-family:"@ＭＳ 明朝","Hiragino Mincho ProN","IPAexMincho","serif";
+	writing-mode: vertical-rl;
+	-webkit-writing-mode: vertical-rl;
+	display: inline-block;
+	line-height: 1em;
+	text-align: center;
+}
+.img01 {
+	width: 100%;
+}
+.para01 {
+	text-indent: 1em;
+	padding-left: 1em;
+}
+.dot01 {
+	text-emphasis-style: filled dot;
+	-webkit-text-emphasis-style: filled dot;
+}
+.dot02 {
+	text-emphasis-style: filled sesame;
+	-webkit-text-emphasis-style: filled sesame;
+}
+.auther01 {
+	font-weight: bold;
+	font-size: 1.1em;
+}

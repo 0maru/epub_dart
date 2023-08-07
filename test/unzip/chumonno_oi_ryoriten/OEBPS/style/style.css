@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+body {
+	font-family:"@ＭＳ 明朝","Hiragino Mincho ProN","IPAexMincho","serif";
+	line-height: 1.8;
+	writing-mode: vertical-rl;
+	-webkit-writing-mode: vertical-rl;
+	-epub-writing-mode: vertical-rl;
+}
+h1, h2, h3, h4, div, p, ol, ul, li {
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	font-size: 1.3em;
+}
+h2 {
+	text-indent: 1em;
+	font-size: 1.2em;
+}
+h3 {
+	font-size: 1em;
+}
+div {
+	font-size: 1em;
+}
+p {
+	font-size: 1em;
+}
+ol, ul {
+	margin: 0 0 0 1em;
+	padding: 0;
+}
+li {
+	list-style-type: none;
+}
+ol > li {
+	margin-top: 2em;
+}
+img {
+	border: 0;
+}
+
+/* 装飾 */
+
+.h1-01 {
+	display: none;
+}
+strong {
+	font-weight: bold;
+}
+em	{
+	font-weight: bold;
+	font-style: normal;
+}
+.title01 {
+	text-indent: 2em;
+}
+.p1 {
+	margin-top: 2em;
+	font-weight: bold;
+}
+.big01 {
+	font-size: 110%;
+	font-weight: bold;
+}
+.big02 {
+	font-size: 120%;
+	font-weight: bold;
+}
+.small01 {
+	font-size: 90%;
+}
+rt {
+	font-size: 0.5em;
+
+}
+.italic01 {
+	font-style: italic;
+}
+.bold01 {
+	font-weight: bold;
+}
+.gaiji01 {
+	width: 1em;
+}
+.gaiji01 img {
+	width: 1em;
+}
+.line01 {
+	border-right: 1px solid #000;
+}
+.underline01 {
+	text-decoration: underline;
+}
+.overline01 {
+	text-decoration: overline;
+}
+.linethrough01 {
+	text-decoration: line-through;
+}
+.tcy {
+	-webkit-writing-mode: horizontal-tb;
+	display: inline-block;
+	line-height: 1em;
+	text-align: center;
+	text-combine: horizontal;
+	-webkit-text-combine: horizontal;
+	-epub-text-combine: horizontal;
+}
+.tate01 {
+	text-orientation: upright;
+	-epub-text-orientation: upright;
+}
+.yoko01 {
+	text-orientation: sideways;
+	-epub-text-orientation: sideways;
+}
+.img01 img {
+	width: 100%;
+}
+.dot01 {
+	text-emphasis-style: filled dot;
+	-webkit-text-emphasis-style: filled dot;
+}
+.dot02 {
+	text-emphasis-style: filled sesame;
+	-webkit-text-emphasis-style: filled sesame;
+}
+.sita01 {
+	text-align: right;
+}
+.sage01 {
+	text-indent: -1em;
+	padding-top: 1em;
+}
+
