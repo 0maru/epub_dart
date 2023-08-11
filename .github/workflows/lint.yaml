@@ -1,0 +1,18 @@
+name: Lint
+
+on:
+  push:
+
+jobs:
+  analyze:
+    timeout-minutes: 5
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout pushed commit
+        uses: actions/checkout@v3
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: "stable"
+          cache: true
+      - name: Dart Analyze
+        run: dart analyze . --fatal-infos
