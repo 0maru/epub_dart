@@ -18,10 +18,15 @@ jobs:
       - run: dart pub get
       - name: Dart Test
         run: dart test --coverage=coverage
+      - name: Collect coverage
+        run: |
+          dart pub global activate coverage
+          dart pub global run coverage:test_with_coverage
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v3
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          directory: ./coverage/test/
+          files: coverage/lcov.info
           flags: unittests
           verbose: true
+          fail_ci_if_error: true
