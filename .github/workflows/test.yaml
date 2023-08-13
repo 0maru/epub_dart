@@ -1,16 +1,16 @@
-name: Lint
+name: Test
 
 on:
   push:
 
 jobs:
-  analyze:
-    timeout-minutes: 5
+  test:
+    timeout-minutes: 10
     runs-on: ubuntu-latest
     setps:
       - name: Checkout pushed commit
         uses: actions/checkout@v3
       - uses: dart-lang/setup-dart@v1
       - run: dart pub get
-      - name: Dart Analyze
-        run: dart analyze . --fatal-infos
+      - name: Dart Test
+        run: dart test
