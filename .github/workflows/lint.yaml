@@ -2,6 +2,9 @@ name: Lint
 
 on:
   push:
+    paths:
+      - "lib/**"
+      - "test/**"
 
 jobs:
   analyze:
