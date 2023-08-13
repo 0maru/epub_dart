@@ -16,4 +16,11 @@ jobs:
       - uses: dart-lang/setup-dart@v1
       - run: dart pub get
       - name: Dart Test
-        run: dart test
+        run: dart test --coverage=coverage
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          directory: ./coverage/test/
+          flags: unittests
+          verbose: true
