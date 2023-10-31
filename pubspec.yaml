@@ -1,7 +1,7 @@
 name: epub_dart
 description: A new Flutter package project.
 version: 0.0.1
-homepage:
+homepage: https://github.com/0maru/epub_dart
 
 environment:
   sdk: '>=3.0.5 <4.0.0'
