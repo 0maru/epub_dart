@@ -1,11 +1,38 @@
-include: package:lints/core.yaml
-
 analyzer:
   language:
     strict-casts: true
     strict-inference: true
     strict-raw-types: true
 
+  errors:
+    close_sinks: ignore
+    missing_required_param: error
+    missing_return: error
+    record_literal_one_positional_no_trailing_comma: error
+    collection_methods_unrelated_type: warning
+    unrelated_type_equality_checks: warning
+
 linter:
   rules:
+    - always_declare_return_types
+    - annotate_overrides
+    - avoid_double_and_int_checks
+    - avoid_final_parameters
+    - avoid_function_literals_in_foreach_calls
+    - avoid_returning_null_for_void
+    - avoid_slow_async_io
+    - avoid_type_to_string
+    - avoid_void_async
+    - camel_case_types
+    - comment_references
+    - eol_at_end_of_file
+    - prefer_const_constructors
+    - prefer_const_constructors_in_immutables
+    - prefer_const_declarations
+    - prefer_const_literals_to_create_immutables
+    - prefer_contains
     - prefer_single_quotes
+    - unnecessary_await_in_return
+    - unnecessary_const
+    - unnecessary_null_checks
+    - void_checks
