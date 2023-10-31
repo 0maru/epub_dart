@@ -17,6 +17,8 @@ void main() {
     <meta name="cover" content="images.cover.jpg" />
     <meta name="FUSEe" content="1.3.2" />
     <meta property="dcterms:modified">2014-05-30T09:00:00Z</meta>
+    <dc:date>2022-11-30</dc:date>
+    <dc:contributor>構成・テキスト：XXXグラフィックス：XXX写真：XXX</dc:contributor>
   </metadata>
   <manifest>
     <item id="nav" href="text/nav.xhtml" media-type="application/xhtml+xml" properties="nav" />
@@ -42,7 +44,66 @@ void main() {
     test('parse content.opf', () {
       final metadata = Metadata.fromString(data);
       expect(metadata, isNotNull);
-      expect(metadata.docTitle, ['注文の多い料理店']);
+      expect(
+        metadata.identifier,
+        'urn:uuid:f2478527-bca8-4b1d-88fc-987a2da438ce',
+      );
+      expect(
+        metadata.title,
+        '注文の多い料理店',
+      );
+      expect(
+        metadata.language,
+        'ja',
+      );
+      expect(
+        metadata.contributor,
+        '構成・テキスト：XXXグラフィックス：XXX写真：XXX',
+      );
+      expect(
+        metadata.coverage,
+        '',
+      );
+      expect(
+        metadata.creator,
+        '宮沢賢治',
+      );
+      expect(
+        metadata.date,
+        '2022-11-30',
+      );
+      expect(
+        metadata.description,
+        '',
+      );
+      expect(
+        metadata.format,
+        '',
+      );
+      expect(
+        metadata.publisher,
+        '株式会社内外プロセス',
+      );
+      expect(
+        metadata.relation,
+        '',
+      );
+      expect(
+        metadata.rights,
+        '',
+      );
+      expect(
+        metadata.source,
+        '',
+      );
+      expect(
+        metadata.subject,
+        '',
+      );
+      expect(
+        metadata.type,
+        '',
+      );
     });
   });
 }
