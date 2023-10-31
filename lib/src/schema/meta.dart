@@ -1,17 +1,28 @@
 class Meta {
-  final String? metaDir;
-  final String? metaId;
-  final String metaProperty;
-  final String? metaRefines;
-  final String? metaScheme;
-  final String? metaXmlLang;
+  /// meta dir
+  final String? dir;
 
-  Meta(
-    this.metaDir,
-    this.metaId,
-    this.metaProperty,
-    this.metaRefines,
-    this.metaScheme,
-    this.metaXmlLang,
-  );
+  /// meta id
+  final String? id;
+
+  /// meta property
+  final String property;
+
+  /// meta refines
+  final String? refines;
+
+  /// meta schema
+  final String? scheme;
+
+  /// meta xmlLang
+  final String? xmlLang;
+
+  Meta({
+    this.dir,
+    this.id,
+    this.property,
+    this.refines,
+    this.scheme,
+    this.xmlLang,
+  });
 }
